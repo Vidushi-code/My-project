@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SS Pickles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img  src="leave logo.jpg" height:80 alt="small logo"width=100 >
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+           <img src="aa pamplet.jpg"  height:110 alt="pamplet" width:1600>
+        </section>
+        <section class="products">
+            <br>
+            <h1>Our Products</h1>
+            <div class="product-card">
+                <img src="mango pickles.JPG"width=300 alt="Mango Pickle"height=300>
+                <h3>Mango Pickle</h3>
+                <p>Sour and tangy mango pickle.<br>Rs.200/kg</p>
+                <button onclick="addToCart('Mango Pickle')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="lemon pickle.JPG" width=320 alt="Lemon Pickle"height=300>
+                <h3>Lemon Pickle</h3>
+                <p>Sweet, Sour, and Simply Irresistible.<br>Rs.190/Kg</p>
+                <button onclick="addToCart('Lemon Pickle')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="mixed pickle.JPG" width="300" alt="Mixed Pickle" height="300">
+                <h3>Mixed Pickle</h3>
+                <p>A delightful mix of mango,lemon,carrot,chilli,teet.<br>Rs220/Kg</p>
+                <button onclick="addToCart('Mixed Pickle')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="Chilli pickle.JPG" width="300" alt="chilli Pickle" height="300">
+                <h3>Chilli Pickle</h3>
+                <p>Savor the Spice–Perfect cilli.<br>Rs190/Kg</p>
+                <button onclick="addToCart('Chilli Pickle')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="Red chilli.JPG" width="290" alt="Red chilli Pickle" height="300">
+                <h3> Red Chilli Pickle</h3>
+                <p>Stuffed Red Chilli.<br>Rs130/Kg</p>
+                <button onclick="addToCart('Red Chilli Pickle')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="Dry mango.JPG" width="250" alt="Dry Mango Pickle" height="300">
+                <h3>Dry Mango Pickle</h3>
+                <p>Sour mango pickle with no oil and heeng flavour.<br>Rs230/Kg</p>
+                <button onclick="addToCart('Dry Mango Pickle')">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+    <div class="container">
+        <h2>Submit Your Review</h2>
+        <div class="review-section">
+            <form id="reviewForm" class="review-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <textarea id="reviewText" placeholder="Write your review here..." rows="4" required></textarea>
+                <button type="submit">Submit Review</button>
+            </form>
+    
+            <div class="reviews" id="reviewsSection">
+                <h3>Recent Reviews:</h3><br>
+                <p><h4>Vidushi Agarwal:</h4> I highly recommend this pickle to anyone who enjoys traditional, flavorful Indian pickles. I’ll definitely be ordering again!
+                <br><h4>Vanshika Rastogi:</h4>I love how the pickle isn't overly oily like some store-bought brands. It feels fresh, authentic, and homemade, which really adds to the experience. It’s the perfect accompaniment to my roti, rice, and even sandwiches.</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 SS Pickles. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
